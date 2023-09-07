@@ -1,0 +1,558 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside aside aside"
+    "aside aside aside"
+    "main main main"
+    "main main main"
+    "footer foter footer";
+    height: 100vh;
+    
+    
+}
+
+
+.header-net{
+  grid: header;
+  
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+  header{
+    width: 100%;
+    height: 60px;
+    background: #000;
+    
+    
+  }
+  
+  
+  .logo-tittle{
+    display: flex;
+    margin-left: 39vh;
+    
+  }
+  
+  
+
+
+  .container-portada{
+    width: 100%;
+    height: 400px;
+    background-image:url(casa1.png);
+    margin-top: -28px;
+    background-size: 100%;
+    animation: movimiento 10s infinite linear alternate;
+    position: relative;
+    
+  }
+  
+  @keyframes movimiento{
+    from{
+      background-position:top right ;
+    }
+    to{
+      background-position: bottom left;
+    }
+  }
+  
+  .container-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left,black,#0672d0);
+    opacity: 0.5;
+  
+  }
+  
+  .container-details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: #fff;
+  }
+  
+  .details h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin: 15px 15px;
+  }
+  
+  .details p{
+    margin: 15px 15px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 15px 15px;
+    transition: all 388ms;
+    
+  }
+  
+  
+  
+  .details button:hover{
+    background: #fff;
+    color: #000;
+  }
+
+
+
+
+
+
+/*aside*/
+
+
+
+
+.aside-net{
+    display: colum;
+    grid: aside;
+  
+   
+    
+}
+
+.boxflex{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flexbox{
+ display: colum;
+ justify-content: cn;
+}
+
+  
+  
+  
+    .flexbox h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 15PX;
+  
+  }
+  
+   .flexbox hr{
+    max-width: 900px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left,black,#0672d0);
+    margin-top: 1opx;
+  
+  }
+  
+  
+  
+   .flexbox p{
+    font-size:20px;
+    margin: 15px 15px;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  
+  section{
+    display: flex;
+    width: 90%;
+    height: 440px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 26, 0.6);
+    
+  
+  }
+  
+  section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  
+  section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  
+  
+  
+  
+  h2{
+    font-size: 30px;
+    margin: 20px;
+    color: #000;
+    font-weight: 900;
+    text-align: left;
+    
+    
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-net{
+    grid: main;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) ;
+    border-radius: 20px;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+  
+    background-color: #fff;
+    
+  }
+
+  form h5{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  .input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;  
+    
+  }
+  
+  h3{
+    color: #283629;
+    font-size: 35px;
+  }
+  
+  
+  label{
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  input, select{
+  
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none;
+  }
+  
+  input::placeholder,textarea::placeholder{
+    color: #b5cab6;
+  }
+  
+  
+  .form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .form-txt a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .btn{
+    font-size: 16px;
+    color: #ffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    background-color: #50e04b;
+  }
+  
+  
+  h5{
+    font-size: 20px;
+  }
+
+.footer-net{
+    grid: footer;
+    background: -webkit-linear-gradient(left,black,#0672d0);
+}
+
+.container-icon{
+    display: flex;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 20px;
+    flex-direction: column;
+    
+    
+   
+  }
+  
+  .container-icon i{
+   font-size: 40px;
+    color: #fff;
+    margin-top: -20px;
+    
+    
+    
+  }
+  
+  .container-icon a{
+    display: flex;
+    text-decoration: none;
+    margin-top: 30px;
+    font-size: 17px;
+    color: #fff;
+  
+  }
+  
+  
+  .container-whatsapp{
+    display: flex;
+    margin-left: 69vh;
+    margin-top: -120px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  
+  .container-whatsapp i{
+    font-size: 160px;
+    color: #50e04b;
+    margin-right: 27px;
+  }
+  
+  .container-whatsapp p{
+    margin: auto;
+    color: #b5cab6;
+  }
+  
+
+
+
+
+  @media screen and (max-width:991px) {
+    
+    .aside-net{
+      display: block;
+      width: 100%;
+      
+      
+  }
+
+  .boxflex img{
+    display: flex;
+    margin: auto;
+    height: 450px;
+    width: 320px;
+  }
+
+
+  .flexbox{
+   
+    margin: auto;
+   }
+
+
+   .flexbox h1{
+    font-size: 19px;
+    font-weight: 900;
+  
+  }
+  
+   .flexbox hr{
+    max-width: 350px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left,black,#0672d0);
+    margin-top: 1opx;
+  
+  }
+  
+  
+  
+   .flexbox p{
+    font-size:15px;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 100;
+  }
+  
+  
+  section{
+    display: flex;
+    width: 100%;
+    height: 230px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 26, 0.6);
+
+  }
+
+  .header-net{
+    display: block;
+    width: 100%;
+    
+  }
+
+  .logo-tittle{
+    display: flex;
+    margin-left: 3px;
+    
+  }
+
+  .details h1{
+    font-size: 40px;
+    font-weight: 100;
+  }
+  
+  .details p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+  
+  .details button{
+    padding: 10px 20px;
+    font-size: 14px;
+    background: none;
+    border-style: none;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+    transition: all 388ms;
+    
+  }
+  
+  
+  
+  .details button:hover{
+    background: #fff;
+    color: #000;
+  }
+
+  .details{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: #fff;
+  }
+
+
+  form{
+    display: flex;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) ;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: #fff;
+    
+  }
+
+  form h3{
+    font-size: 20px;
+  }
+   
+.container-icon{
+  display: block;
+}
+
+
+
+
+.container-whatsapp{
+  display: block;
+  margin-left: 12px;
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.container-whatsapp i{
+  font-size: 120px;
+  color: #50e04b;
+  margin-left: 9px;
+}
+
+
+.main-net{
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px
+}
+  
+  
+
+  }
